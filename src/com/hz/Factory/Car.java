@@ -7,4 +7,6 @@ public interface Car {
     void image(ConsoleWriter writer);
     void pros(ConsoleWriter writer);
     void cons(ConsoleWriter writer);
+    double getMaxSpeed();
+    double getMaxRange();
 }

@@ -52,4 +52,14 @@ public class FamilyCar implements Car{
                 "2) Not really powerful\n" +
                 "3) Too large");
     }
+
+    @Override
+    public double getMaxSpeed() {
+        return 130;
+    }
+    public double getMaxRange(){
+        return 550;
+    }
+
+
 }

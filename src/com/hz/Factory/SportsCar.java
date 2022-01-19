@@ -41,4 +41,12 @@ public class SportsCar implements Car{
                 "2) Maintenance\n" +
                 "3) Expensive");
     }
+
+    @Override
+    public double getMaxSpeed() {
+        return 250;
+    }
+    public double getMaxRange(){
+        return 300;
+    }
 }
