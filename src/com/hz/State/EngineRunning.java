@@ -25,7 +25,7 @@ public class EngineRunning extends State{
 
     @Override
     public void driveCar() {
-        System.out.println("Driving car ...");
+        System.out.println("Driving car to work ...");
         System.out.println("Stopping car and its engine ...");
         this.buyer.changeState(new EngineStopped(this.buyer));
     }

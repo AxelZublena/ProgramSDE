@@ -1,5 +1,7 @@
 package com.hz.Factory;
 
+import com.hz.Adapter.MetricToImperial;
+import com.hz.Adapter.SIToImperial;
 import com.hz.ConsoleWriter;
 import com.hz.State.NoKey;
 import com.hz.State.State;
@@ -31,6 +33,13 @@ public abstract class Buyer {
     public void renderCar(ConsoleWriter writer) {
         this.car = chooseCar();
         car.printAll(writer);
+        // Gets information about the car for American user
+        SIToImperial metricToImperialAdapter = new MetricToImperial(this.getCar());
+        double carMaxSpeedMPH = metricToImperialAdapter.getMaxSpeed();
+        double carMaxRangeMiles = metricToImperialAdapter.getMaxRange();
+        writer.printText("\nMax speed of the car is: " + carMaxSpeedMPH + " MPH");
+        writer.printText("Max range of the car is: " + carMaxRangeMiles + " Miles");
+        writer.printText("\n");
     }
 
     public abstract Car chooseCar();

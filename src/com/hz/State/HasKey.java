@@ -39,7 +39,7 @@ public class HasKey extends State{
     @Override
     public void storeKey() {
         this.buyer.setKey(false);
-        System.out.println("Storing the key in the house.");
+        System.out.println("Storing the key.");
     }
 
 
