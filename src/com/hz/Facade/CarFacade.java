@@ -9,7 +9,7 @@ public class CarFacade {
 
     //Renders all actions needed to start the car
     public void startCar (ConsoleWriter writer) {
-        writer.printText("\nNow, let's go on a round trip with the car.\n" +
+        writer.printText("\nNow, let's go on a holiday with the car.\n" +
                 "Firstly, we need to start the car:");
         engine.on(writer);
         heater.on(writer);

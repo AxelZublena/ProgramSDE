@@ -29,15 +29,27 @@ public class Main {
         }
         buyer.renderCar(writer);
 
-        // Gets information about the car for American user
-        SIToImperial metricToImperialAdapter = new MetricToImperial(buyer.getCar());
-        double carMaxSpeedMPH = metricToImperialAdapter.getMaxSpeed();
-        double carMaxRangeMiles = metricToImperialAdapter.getMaxRange();
-        writer.printText("\nMax speed of the car is: " + carMaxSpeedMPH + " MPH");
-        writer.printText("Max range of the car is: " + carMaxRangeMiles + " Miles");
-        writer.printText("\n");
+        writer.printText("Now, it is time to choose whether you will drive your car to work or you are going on a holiday with the car: \n" +
+                "1 - Work \n" +
+                "2 - Holiday");
 
-        // Logic to get key, open, start, drive, close the car and store key
+
+        int driveChoice = Integer.parseInt(reader.readLine());
+
+        // Depending on the answer, it shows the most appropriate car for the buyer.
+        if (driveChoice == 1) {
+            // Logic to get key, open, start, drive, close the car and store key
+            drivingToWorkRoutine(buyer);
+        } else {
+            //Starting the car for a round trip and stopping the car after that
+            car.startCar(writer);
+            car.stopCar(writer);
+
+        }
+
+    }
+
+    private static void drivingToWorkRoutine(Buyer buyer) {
         buyer.getState().driveCar();
         buyer.getState().getKey();
         buyer.getState().openCar();
@@ -45,12 +57,5 @@ public class Main {
         buyer.getState().driveCar();
         buyer.getState().closeCar();
         buyer.getState().storeKey();
-
-        writer.printText("\n");
-
-        //Starting the car for a round trip and stopping the car after that
-        car.startCar(writer);
-        car.stopCar(writer);
-
     }
 }
