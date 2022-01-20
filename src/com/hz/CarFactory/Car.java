@@ -1,10 +1,12 @@
-package com.hz.Factory;
+package com.hz.CarFactory;
 
 import com.hz.ConsoleWriter;
 
-public interface Road {
+public interface Car {
     void printAll(ConsoleWriter writer);
     void image(ConsoleWriter writer);
     void pros(ConsoleWriter writer);
     void cons(ConsoleWriter writer);
+    double getMaxSpeed();
+    double getMaxRange();
 }

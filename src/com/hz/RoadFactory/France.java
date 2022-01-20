@@ -1,6 +1,6 @@
-package com.hz.Factory;
+package com.hz.RoadFactory;
 
-public class France extends Country{
+public class France extends Country {
     @Override
     public Road chooseRoad() {
         return new FrenchRoad();

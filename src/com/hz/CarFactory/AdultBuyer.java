@@ -1,4 +1,4 @@
-package com.hz.Factory;
+package com.hz.CarFactory;
 
 public class AdultBuyer extends Buyer{
     @Override

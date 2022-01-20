@@ -2,8 +2,6 @@ package com.hz.Facade;
 
 import com.hz.ConsoleReader;
 import com.hz.ConsoleWriter;
-import com.hz.Factory.AdultBuyer;
-import com.hz.Factory.TeenageBuyer;
 import com.hz.Template.GangnamStlyeSong;
 import com.hz.Template.ItsMyLifeSong;
 import com.hz.Template.LoseYourselfSong;

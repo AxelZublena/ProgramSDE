@@ -1,8 +1,9 @@
-package com.hz.Factory;
+package com.hz.RoadFactory;
 
 import com.hz.ConsoleWriter;
+import com.hz.RoadFactory.Road;
 
-public class DutchRoad implements Road{
+public class DutchRoad implements Road {
 
     //Renders the whole information about the car
     @Override

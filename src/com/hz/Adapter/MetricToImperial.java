@@ -1,6 +1,6 @@
 package com.hz.Adapter;
 
-import com.hz.Factory.Car;
+import com.hz.CarFactory.Car;
 
 public class MetricToImperial implements SIToImperial {
     private Car car;
