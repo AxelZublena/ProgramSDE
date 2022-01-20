@@ -11,6 +11,8 @@ public class Main {
         Buyer buyer = null;
         CarFacade car = new CarFacade();
 
+        Country country = null;
+
         ConsoleWriter writer = new ConsoleWriter();
         ConsoleReader reader = new ConsoleReader();
 
@@ -25,9 +27,22 @@ public class Main {
             buyer = new TeenageBuyer();
         } else {
             buyer = new AdultBuyer();
-
         }
         buyer.renderCar(writer);
+
+        writer.printText("\nTell me whether you live in the Netherlands or in France. Depending on your answer, you will drive on different roads: \n" +
+                "1 - Netherlands \n" +
+                "2 - France");
+
+        choice = Integer.parseInt(reader.readLine());
+
+        // Depending on the answer, it shows the most appropriate road for the country.
+        if (choice == 1) {
+            country = new Netherlands();
+        } else {
+            country = new France();
+        }
+        country.renderRoad(writer);
 
         // Gets information about the car for American user
         SIToImperial metricToImperialAdapter = new MetricToImperial(buyer.getCar());
