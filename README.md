@@ -1,5 +1,7 @@
 # Software Design - ProgramSDE
 
+GitHub Repository: https://github.com/AxelZublena/ProgramSDE
+
 ## Table of Content
 1. [Introduction](#introduction)
 2. [Adapter Design Pattern](#adapter-design-pattern)
@@ -8,6 +10,7 @@
 5. [Car Factory Design Pattern](#car-factory-design-pattern)
 6. [Template Design Pattern](#template-design-pattern)
 7. [Facade Design Pattern](#facade-design-pattern)
+8. [Authors](#authors)
 
 ## Introduction 
 The application gives you the opportunity to hide for a little bit from reality. There you can choose to be an adult or a teenager. As a result, the most appropriate car would be suggested to you and you will be able to decide to drive the car to work or during holidays. In addition, you decide whether you will drive on the roads of the Netherlands or those in France. After the decision is made, you grab your key from home and go for a ride... 
@@ -53,3 +56,8 @@ According to Refactoring Guru "Template Method is a behavioural design pattern t
 According to Refactoring Guru " Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes". In our case, we have CarFacade class that involves reference to the three different objects (Engine, Heater and Radio). As a result, it is possible to create methods that operate with the objects (startCar and stopCar methods). Then, the Main class uses the facade to call the startCar and stopCar methods. In this way, we can have as many objects as we want and work with their methods without breaking the code. 
 
 ![Facade Diagram](./uml/Facade.png)
+
+## Authors
+ 
+* **Bogomil Dochev**
+* **Axel Zublena**
