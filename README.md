@@ -18,7 +18,7 @@ GitHub Repository: https://github.com/AxelZublena/ProgramSDE
 ## Introduction 
 The application gives you the opportunity to hide for a little bit from reality. There you can choose to be an adult or a teenager. As a result, the most appropriate car would be suggested to you and you will be able to decide to drive the car to work or during holidays. In addition, you decide whether you will drive on the roads of the Netherlands or those in France. After the decision is made, you grab your key from home and go for a ride... 
  
-To develop this application, we create a git repository, divided the tasks and committed three design patterns each. Bogomil worked on the Car Factory, Template and Facade, while I worked on the Adapter, State and Road Factory. To write this README.md file, we worked simultaneously on a word document, which was translated to a markdown format.
+To develop this application, we create a git repository, divided the tasks and committed three design patterns each. Bogomil worked on the Car Factory, Template and Facade, while Axel worked on the Adapter, State and Road Factory. To write this README.md file, we worked simultaneously on a word document, which was translated to a markdown format.
 
 ## Creational Design Patterns
 ### Road Factory
